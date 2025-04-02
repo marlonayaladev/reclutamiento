@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1><center>¿Por qué abres la consola? pillin</center></h1>
+    <p>únete</p>
+    <button id="boton" class="boton">
+        ¡Quiero participar!
+    </button>
+
+    <script>
+        const enviarmensaje = () => {
+            const numero = '+51946415535';
+            const mensaje = encodeURIComponent('hola quiero participar');
+            const wsp = `https://wa.me/${numero}?text=${mensaje}`;
+            window.open(wsp, '_blank');
+        };
+        document.getElementById('boton').addEventListener('click', enviarmensaje);
+
+        // Redirect to a different Rickroll if viewing page source
+        if (document.location.href.includes("view-source")) {
+            document.location.href = "https://www.youtube.com/watch?v=QH2-TGUlwu4"; // Rickroll 🕺
+        }
+    </script>
+</body>
+</html>
