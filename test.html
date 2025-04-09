@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="boton">
+        boton
+    </button>
+
+</body>
+
+<script>
+
+ document.getElementById('participar-btn').addEventListener('click', function () {
+const phoneNumber = '+51946415535';
+const message = encodeURIComponent('hola quiero participar');
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+window.open(whatsappUrl, '_blank');
+        });
+
+
+        document.getElementById('participar-btn').addEventListener('click', function () {
+const phoneNumber = '+51946415535';
+const message = encodeURIComponent('hola quiero participar');
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+window.open(whatsappUrl, '_blank');
+        });
+
+</script>
+</html>
